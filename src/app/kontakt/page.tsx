@@ -90,6 +90,14 @@ export default function KontaktPage() {
                       +48 518 131 696
                     </a>
                   </div>
+                  <div className="p-6 bg-gray-50 rounded-2xl">
+                    <h3 className="font-semibold text-gray-900 mb-1">Majka</h3>
+                    <p className="text-[#15A727] font-medium text-sm">Trenerka personalna</p>
+                  </div>
+                  <div className="p-6 bg-gray-50 rounded-2xl">
+                    <h3 className="font-semibold text-gray-900 mb-1">Dymitrii</h3>
+                    <p className="text-[#1863DC] font-medium text-sm">Trener personalny & fizjoterapeuta</p>
+                  </div>
                 </div>
 
                 {/* Email */}

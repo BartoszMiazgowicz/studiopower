@@ -4,14 +4,27 @@ import Image from "next/image";
 import { useState } from "react";
 
 const images = [
-  { src: "/images/a.jpeg", alt: "Studio Power Performance" },
-  { src: "/images/b.jpeg", alt: "Trening w studiu" },
-  { src: "/images/c.jpeg", alt: "Sprzęt treningowy" },
-  { src: "/images/d.jpeg", alt: "Przestrzeń treningowa" },
-  { src: "/images/f.jpg", alt: "Strefa cardio" },
-  { src: "/images/g.jpg", alt: "Sala treningowa" },
-  { src: "/images/h.jpg", alt: "Trening personalny" },
-  { src: "/images/i.jpeg", alt: "Zajęcia grupowe" },
+  { src: "/images/LP7A6877.jpeg", alt: "Studio Power Performance" },
+  { src: "/images/LP7A6879.jpeg", alt: "Trening w studiu" },
+  { src: "/images/LP7A6880.jpeg", alt: "Sprzęt treningowy" },
+  { src: "/images/LP7A6881.jpeg", alt: "Przestrzeń treningowa" },
+  { src: "/images/LP7A6909.jpeg", alt: "Strefa cardio" },
+  { src: "/images/LP7A6951.jpeg", alt: "Sala treningowa" },
+  { src: "/images/LP7A7022.jpeg", alt: "Trening personalny" },
+  { src: "/images/LP7A7047.jpeg", alt: "Strefa treningowa" },
+  { src: "/images/LP7A7077.jpeg", alt: "Zajęcia grupowe" },
+  { src: "/images/LP7A7087.jpeg", alt: "Sprzęt" },
+  { src: "/images/LP7A7098.jpeg", alt: "Studio wnętrze" },
+  { src: "/images/LP7A7110.jpeg", alt: "Trening siłowy" },
+  { src: "/images/LP7A7141.jpeg", alt: "Strefa funkcjonalna" },
+  { src: "/images/LP7A7164.jpeg", alt: "Przestrzeń treningowa" },
+  { src: "/images/LP7A7165.jpeg", alt: "Studio Power Performance" },
+  { src: "/images/LP7A7168.jpeg", alt: "Wyposażenie studia" },
+  { src: "/images/LP7A7174.jpeg", alt: "Strefa treningu" },
+  { src: "/images/LP7A7176.jpeg", alt: "Studio od wewnątrz" },
+  { src: "/images/LP7A7198.jpeg", alt: "Trening w akcji" },
+  { src: "/images/LP7A7204.jpeg", alt: "Power Performance" },
+  { src: "/images/LP7A7205.jpeg", alt: "Studio treningowe" },
 ];
 
 export default function GaleriaPage() {

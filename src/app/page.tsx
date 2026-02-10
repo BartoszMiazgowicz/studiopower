@@ -136,16 +136,30 @@ const trainers = [
   {
     name: 'Monika',
     title: 'Trenerka personalna i medyczna',
-    image: '/images/h.jpg',
+    image: '/images/LP7A7141.jpeg',
     specializations: ['Trening silowy dla kobiet', 'Trening medyczny', 'Trening w ciazy', 'Certyfikowany trener personalny'],
     description: 'Doswiadczenie w sportach silowych i kompleksowe podejscie do treningu kobiet. Specjalizacja w budowaniu sily, poprawie sylwetki i bezpiecznym treningu podczas ciazy.',
   },
   {
     name: 'Mateusz',
     title: 'Trener personalny i przygotowania motorycznego',
-    image: '/images/g.jpg',
+    image: '/images/LP7A7110.jpeg',
     specializations: ['Przygotowanie motoryczne', 'Trening funkcjonalny', 'Gimnastyka korekcyjna', 'Rehabilitacja ruchowa'],
     description: 'Laczy trening funkcjonalny z elementami gimnastyki korekcyjnej i rehabilitacji. Cel: redukcja bolu, poprawa jakosci zycia i wynikow sportowych.',
+  },
+  {
+    name: 'Majka',
+    title: 'Trenerka personalna',
+    image: '/images/majka.jpg',
+    specializations: ['Trening personalny', 'Poprawa jakosci ruchu', 'Sporty druzynowe', 'Korekcja niedoborow ruchowych'],
+    description: '20 lat doswiadczenia w sportach druzynowych i 10 lat stazu na silowni. Specjalistka od zadan specjalnych – znajduje niedobory w ruchu i skutecznie je eliminuje.',
+  },
+  {
+    name: 'Dymitrii',
+    title: 'Trener personalny i fizjoterapeuta',
+    image: '/images/Dymitrii.jpg',
+    specializations: ['Trening personalny', 'Fizjoterapia', 'Redukcja bolu', 'Poprawa postawy'],
+    description: 'Laczy wiedze z treningu personalnego i fizjoterapii. Pomaga odzyskac energie, zrzucic kilogramy i poprawic komfort codziennego zycia.',
   },
 ];
 
@@ -191,12 +205,12 @@ const testimonials = [
 
 // Gallery images
 const galleryImages = [
-  { src: '/images/a.jpeg', alt: 'Studio Power Performance' },
-  { src: '/images/b.jpeg', alt: 'Sprzet treningowy' },
-  { src: '/images/c.jpeg', alt: 'Trening personalny' },
-  { src: '/images/d.jpeg', alt: 'Strefa treningowa' },
-  { src: '/images/f.jpg', alt: 'Trening silowy' },
-  { src: '/images/i.jpeg', alt: 'Zajecia grupowe' },
+  { src: '/images/LP7A6877.jpeg', alt: 'Studio Power Performance' },
+  { src: '/images/LP7A6879.jpeg', alt: 'Sprzet treningowy' },
+  { src: '/images/LP7A6880.jpeg', alt: 'Strefa treningowa' },
+  { src: '/images/LP7A6909.jpeg', alt: 'Trening personalny' },
+  { src: '/images/LP7A6951.jpeg', alt: 'Trening silowy' },
+  { src: '/images/LP7A7022.jpeg', alt: 'Zajecia grupowe' },
 ];
 
 // Intersection Observer hook for scroll animations
@@ -248,7 +262,7 @@ export default function Home() {
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/a.jpeg"
+            src="/images/LP7A7047.jpeg"
             alt="Power Performance Training"
             fill
             className="object-cover"
@@ -317,7 +331,7 @@ export default function Home() {
               POWER <span className="text-lime-500">PERFORMANCE</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Studio prowadzone przez malzenstwo Monike i Mateusza - profesjonalnych trenerow
+              Studio prowadzone przez zespol profesjonalnych trenerow
               z pasja do pomagania ludziom w osiaganiu ich celow. Specjalizujemy sie w treningach
               personalnych, medycznych i przygotowaniu motorycznym sportowcow.
             </p>
@@ -519,42 +533,34 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {trainers.map((trainer, index) => (
-              <div key={index} className={`scroll-animate delay-${(index + 1) * 200} bg-white rounded-3xl overflow-hidden group border border-gray-100 hover:border-lime-500/20 transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_50px_rgba(0,0,0,0.12)] hover:-translate-y-1`}>
-                <div className="relative h-80 overflow-hidden">
+              <div key={index} className={`scroll-animate delay-${(index + 1) * 200} bg-white rounded-3xl overflow-hidden group border border-gray-100 hover:border-lime-500/20 transition-all duration-500 shadow-[0_4px_20px_rgba(0,0,0,0.06)] hover:shadow-[0_16px_50px_rgba(0,0,0,0.12)] hover:-translate-y-2`}>
+                <div className="relative aspect-[3/4] overflow-hidden">
                   <Image
                     src={trainer.image}
                     alt={trainer.name}
                     fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
+                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                  <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-0 left-0 right-0 p-6">
                     <div className="inline-block px-3 py-1 rounded-full bg-lime-500/90 text-white text-xs font-semibold mb-2">
                       {trainer.title}
                     </div>
-                    <h3 className="text-3xl font-black text-white font-heading">{trainer.name}</h3>
+                    <h3 className="text-2xl font-black text-white font-heading">{trainer.name}</h3>
                   </div>
                 </div>
-                <div className="p-8">
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                <div className="p-5">
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">
                     {trainer.description}
                   </p>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-lime-600 font-semibold text-xs uppercase tracking-wider mb-4">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      <span>Specjalizacje</span>
-                    </div>
-                    <div className="flex flex-wrap gap-2">
-                      {trainer.specializations.map((spec, idx) => (
-                        <span key={idx} className="px-3 py-1.5 bg-gray-50 text-gray-700 text-xs rounded-full border border-gray-100">
-                          {spec}
-                        </span>
-                      ))}
-                    </div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {trainer.specializations.slice(0, 3).map((spec, idx) => (
+                      <span key={idx} className="px-2.5 py-1 bg-lime-500/10 text-lime-700 text-xs rounded-full font-medium">
+                        {spec}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -602,7 +608,7 @@ export default function Home() {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 scroll-animate">
             {[
               { value: '~400', label: 'm2 powierzchni studia' },
-              { value: '2', label: 'Certyfikowanych trenerow' },
+              { value: '4', label: 'Certyfikowanych trenerow' },
               { value: '100%', label: 'Indywidualne podejscie' },
             ].map((stat, index) => (
               <div key={index} className="text-center p-10 bg-white rounded-2xl border border-lime-500/10 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">

@@ -68,7 +68,7 @@ export default function TreningiPersonalnePage() {
                 </div>
                 <div className={`relative aspect-[4/3] rounded-3xl overflow-hidden ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                   <Image
-                    src={`/images/${index === 0 ? 'd' : index === 1 ? 'f' : 'g'}.${index === 0 ? 'jpeg' : 'jpg'}`}
+                    src={`/images/${index === 0 ? 'LP7A6909' : index === 1 ? 'LP7A7164' : 'LP7A7174'}.jpeg`}
                     alt={service.title}
                     fill
                     className="object-cover"

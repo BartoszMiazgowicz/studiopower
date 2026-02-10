@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "O Nas | Power Performance - Studio Treningowe Zielonka",
-  description: "Poznaj zespół Power Performance. Monika i Mateusz - certyfikowani trenerzy personalni z pasją do pomagania innym w osiąganiu celów.",
+  description: "Poznaj zespół Power Performance. Certyfikowani trenerzy personalni z pasją do pomagania innym w osiąganiu celów.",
 };
 
 export default function ONasPage() {
@@ -20,7 +20,7 @@ export default function ONasPage() {
             Poznaj <span className="gradient-text">Nasz Zespół</span>
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Studio prowadzone przez małżeństwo trenerów z pasją do pomagania innym w osiąganiu celów zdrowotnych i sportowych.
+            Studio prowadzone przez zespół trenerów z pasją do pomagania innym w osiąganiu celów zdrowotnych i sportowych.
           </p>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function ONasPage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/g.jpg"
+                  src="/images/LP7A6877.jpeg"
                   alt="Studio Power Performance"
                   fill
                   className="object-cover"
@@ -94,31 +94,34 @@ export default function ONasPage() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
             {/* Monika */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-lg card-hover">
-              <div className="aspect-[4/3] relative">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="aspect-[3/4] relative overflow-hidden">
                 <Image
-                  src="/images/h.jpg"
+                  src="/images/LP7A7141.jpeg"
                   alt="Monika - Trenerka personalna"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <span className="inline-block px-3 py-1 bg-[#15A727] text-white text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Trenerka Personalna & Medyczna</span>
+                  <h3 className="text-3xl font-bold text-white">Monika</h3>
+                </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Monika</h3>
-                <p className="text-[#15A727] font-medium mb-4">Trenerka Personalna & Trener Medyczny</p>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   Certyfikowana trenerka z doświadczeniem w sportach siłowych. Specjalizuje się w treningu siłowym dla kobiet, treningach medycznych i prowadzeniu osób po kontuzjach. Jej pasją jest pomaganie kobietom w odkrywaniu ich siły.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm">Trening siłowy</span>
-                  <span className="px-3 py-1 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm">Trening medyczny</span>
-                  <span className="px-3 py-1 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm">Trening dla kobiet</span>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Trening siłowy</span>
+                  <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Trening medyczny</span>
+                  <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Trening dla kobiet</span>
                 </div>
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <a href="tel:+48692548654" className="flex items-center gap-2 text-gray-600 hover:text-[#15A727] transition-colors">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="pt-6 border-t border-gray-100">
+                  <a href="tel:+48692548654" className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#15A727]/10 text-[#15A727] font-semibold rounded-full hover:bg-[#15A727] hover:text-white transition-all duration-300">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                     +48 692 548 654
@@ -128,33 +131,90 @@ export default function ONasPage() {
             </div>
 
             {/* Mateusz */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-lg card-hover">
-              <div className="aspect-[4/3] relative">
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="aspect-[3/4] relative overflow-hidden">
                 <Image
-                  src="/images/i.jpeg"
+                  src="/images/LP7A7110.jpeg"
                   alt="Mateusz - Trener personalny"
                   fill
-                  className="object-cover"
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <span className="inline-block px-3 py-1 bg-[#1863DC] text-white text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Trener Personalny & Motoryczny</span>
+                  <h3 className="text-3xl font-bold text-white">Mateusz</h3>
+                </div>
               </div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">Mateusz</h3>
-                <p className="text-[#1863DC] font-medium mb-4">Trener Personalny & Przygotowania Motorycznego</p>
-                <p className="text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6 leading-relaxed">
                   Trener personalny i przygotowania motorycznego łączący trening funkcjonalny z elementami gimnastyki korekcyjnej i rehabilitacji ruchowej. Specjalizuje się w pracy ze sportowcami i osobami z problemami ruchowymi.
                 </p>
-                <div className="flex flex-wrap gap-2">
-                  <span className="px-3 py-1 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm">Przygotowanie motoryczne</span>
-                  <span className="px-3 py-1 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm">Trening funkcjonalny</span>
-                  <span className="px-3 py-1 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm">Rehabilitacja</span>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Przygotowanie motoryczne</span>
+                  <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Trening funkcjonalny</span>
+                  <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Rehabilitacja</span>
                 </div>
-                <div className="mt-6 pt-6 border-t border-gray-100">
-                  <a href="tel:+48518131696" className="flex items-center gap-2 text-gray-600 hover:text-[#1863DC] transition-colors">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="pt-6 border-t border-gray-100">
+                  <a href="tel:+48518131696" className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#1863DC]/10 text-[#1863DC] font-semibold rounded-full hover:bg-[#1863DC] hover:text-white transition-all duration-300">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                     </svg>
                     +48 518 131 696
                   </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Majka */}
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="aspect-[3/4] relative overflow-hidden">
+                <Image
+                  src="/images/majka.jpg"
+                  alt="Majka - Trenerka personalna"
+                  fill
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <span className="inline-block px-3 py-1 bg-[#15A727] text-white text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Trenerka Personalna</span>
+                  <h3 className="text-3xl font-bold text-white">Majka</h3>
+                </div>
+              </div>
+              <div className="p-8">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  20 lat doświadczenia w sportach drużynowych (piłka nożna & siatkówka) i 10 lat stażu na siłowni. Trenerka z misją poprawy jakości Twojego ruchu. Specjalistka od zadań specjalnych – znajduje niedobory w Twoim ruchu i skutecznie je eliminuje.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Trening personalny</span>
+                  <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Poprawa jakości ruchu</span>
+                  <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Sporty drużynowe</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Dymitrii */}
+            <div className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+              <div className="aspect-[3/4] relative overflow-hidden">
+                <Image
+                  src="/images/Dymitrii.jpg"
+                  alt="Dymitrii - Trener personalny i fizjoterapeuta"
+                  fill
+                  className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8">
+                  <span className="inline-block px-3 py-1 bg-[#1863DC] text-white text-xs font-bold rounded-full mb-3 uppercase tracking-wider">Trener & Fizjoterapeuta</span>
+                  <h3 className="text-3xl font-bold text-white">Dymitrii</h3>
+                </div>
+              </div>
+              <div className="p-8">
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Pomaga osobom zapracowanym odzyskać energię, zrzucić zbędne kilogramy i poczuć się dobrze w swoim ciele. Łączy wiedzę z treningu personalnego i fizjoterapii – ćwiczenia są skuteczne, bezpieczne i dopasowane do Ciebie. Skupia się na sylwetce, poprawie postawy i redukcji bólu.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Trening personalny</span>
+                  <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Fizjoterapia</span>
+                  <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Redukcja bólu</span>
                 </div>
               </div>
             </div>

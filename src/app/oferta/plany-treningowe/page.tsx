@@ -73,7 +73,7 @@ export default function PlanyTreningowePage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/a.jpeg"
+                  src="/images/LP7A6877.jpeg"
                   alt="Plany treningowe"
                   fill
                   className="object-cover"

@@ -70,7 +70,7 @@ export default function PrzygotowanieMotorycznePage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/f.jpg"
+                  src="/images/LP7A7141.jpeg"
                   alt="Przygotowanie motoryczne"
                   fill
                   className="object-cover"

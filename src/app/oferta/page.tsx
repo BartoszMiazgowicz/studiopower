@@ -10,7 +10,7 @@ const services = [
   {
     title: "Treningi Medyczne",
     description: "Odzyskaj pełną sprawność i pozbądź się bólu dzięki indywidualnie dopasowanym treningom. Idealne dla osób z bólami pleców, stawów, po kontuzjach lub operacjach.",
-    image: "/images/c.jpeg",
+    image: "/images/LP7A7110.jpeg",
     href: "/oferta/treningi-medyczne",
     features: ["Redukcja bólu", "Poprawa mobilności", "Współpraca z lekarzami", "Wsparcie pooperacyjne"],
     color: "from-red-500 to-pink-500",
@@ -18,7 +18,7 @@ const services = [
   {
     title: "Treningi Personalne",
     description: "Osiągnij wymarzoną sylwetkę z trenerem, który dopasuje plan do Twoich celów. Treningi dla każdego - od początkujących po zaawansowanych.",
-    image: "/images/d.jpeg",
+    image: "/images/LP7A6909.jpeg",
     href: "/oferta/treningi-personalne",
     features: ["Kształtowanie sylwetki", "Poprawa kondycji", "Treningi dla kobiet w ciąży", "Budowa masy mięśniowej"],
     color: "from-[#15A727] to-emerald-600",
@@ -26,7 +26,7 @@ const services = [
   {
     title: "Przygotowanie Motoryczne",
     description: "Zwiększ siłę, szybkość i wydolność dla lepszych wyników sportowych. Program dla zawodowców i amatorów.",
-    image: "/images/f.jpg",
+    image: "/images/LP7A7141.jpeg",
     href: "/oferta/przygotowanie-motoryczne",
     features: ["Siła i moc", "Szybkość i zwinność", "Wytrzymałość", "Prewencja kontuzji"],
     color: "from-[#1863DC] to-blue-600",
@@ -34,7 +34,7 @@ const services = [
   {
     title: "Zajęcia Grupowe Fitness",
     description: "Dynamiczne treningi w grupie pełnej motywacji i pozytywnej energii. Różnorodność programów dla każdego poziomu.",
-    image: "/images/b.jpeg",
+    image: "/images/LP7A7077.jpeg",
     href: "/oferta/zajecia-grupowe",
     features: ["Cardio", "Trening siłowy", "Spalanie kalorii", "Motywująca atmosfera"],
     color: "from-purple-500 to-indigo-600",
@@ -42,7 +42,7 @@ const services = [
   {
     title: "Plany Treningowe",
     description: "Indywidualny plan dopasowany do Twojego stylu życia, celów i poziomu zaawansowania. Treningi na własną rękę ze wsparciem trenera.",
-    image: "/images/a.jpeg",
+    image: "/images/LP7A6877.jpeg",
     href: "/oferta/plany-treningowe",
     features: ["Plan na miarę", "Wsparcie online", "Regularne aktualizacje", "Dostęp do trenera"],
     color: "from-orange-500 to-amber-500",

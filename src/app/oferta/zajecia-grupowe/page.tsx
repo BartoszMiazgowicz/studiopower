@@ -78,7 +78,7 @@ export default function ZajeciaGrupowePage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/b.jpeg"
+                  src="/images/LP7A7077.jpeg"
                   alt="Zajęcia grupowe"
                   fill
                   className="object-cover"

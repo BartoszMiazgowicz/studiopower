@@ -113,7 +113,7 @@ export default function DietetykaPage() {
             <div className="relative">
               <div className="aspect-square rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/h.jpg"
+                  src="/images/LP7A7198.jpeg"
                   alt="Dietetyka"
                   fill
                   className="object-cover"

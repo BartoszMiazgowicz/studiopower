@@ -73,7 +73,7 @@ export default function TreningiMedycznePage() {
             <div className="relative">
               <div className="aspect-[4/3] rounded-3xl overflow-hidden">
                 <Image
-                  src="/images/c.jpeg"
+                  src="/images/LP7A7110.jpeg"
                   alt="Treningi medyczne"
                   fill
                   className="object-cover"
