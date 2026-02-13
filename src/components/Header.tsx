@@ -40,6 +40,7 @@ export default function Header() {
           ? 'bg-white/95 backdrop-blur-md shadow-[0_1px_3px_rgba(0,0,0,0.08),0_4px_12px_rgba(0,0,0,0.04)] border-b border-lime-500/10'
           : 'bg-transparent'
       }`}
+      style={{ opacity: 1, transform: 'translateY(0)' }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">

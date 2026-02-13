@@ -1,7 +1,8 @@
 'use client';
 
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
+import Preloader from "@/components/Preloader";
 
 // Scroll helper
 const scrollToSection = (id: string) => {
@@ -246,6 +247,8 @@ function useScrollAnimation() {
 }
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(true);
+  const [heroReady, setHeroReady] = useState(false);
   const aboutRef = useScrollAnimation();
   const servicesRef = useScrollAnimation();
   const scheduleRef = useScrollAnimation();
@@ -256,8 +259,17 @@ export default function Home() {
   const mapRef = useScrollAnimation();
   const contactRef = useScrollAnimation();
 
+  const handlePreloaderComplete = useCallback(() => {
+    setIsLoading(false);
+    // Trigger hero animations after preloader exits
+    setTimeout(() => setHeroReady(true), 100);
+  }, []);
+
   return (
     <div className="bg-white text-gray-900">
+      {/* Preloader */}
+      {isLoading && <Preloader onComplete={handlePreloaderComplete} />}
+
       {/* Hero Section */}
       <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -265,62 +277,93 @@ export default function Home() {
             src="/images/LP7A7047.jpeg"
             alt="Power Performance Training"
             fill
-            className="object-cover"
+            className={`object-cover ${heroReady ? 'hero-image-zoom' : ''}`}
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-gray-900"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/55 to-gray-900"></div>
           <div className="absolute inset-0 bg-lime-500/5"></div>
+          {/* Noise overlay for premium feel */}
+          <div className="noise-overlay absolute inset-0"></div>
         </div>
+
+        {/* Floating particles */}
+        {heroReady && (
+          <div className="absolute inset-0 pointer-events-none overflow-hidden">
+            {[...Array(8)].map((_, i) => (
+              <div
+                key={i}
+                className="hero-particle"
+                style={{
+                  left: `${10 + i * 12}%`,
+                  bottom: '-10px',
+                  animationDuration: `${6 + i * 2}s`,
+                  animationDelay: `${i * 0.8}s`,
+                  width: `${2 + (i % 3)}px`,
+                  height: `${2 + (i % 3)}px`,
+                }}
+              />
+            ))}
+          </div>
+        )}
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="space-y-8 animate-fade-in">
-            <div className="space-y-4">
-              <div className="inline-block px-4 py-1.5 rounded-full border border-lime-500/30 bg-lime-500/10 backdrop-blur-sm mb-4">
-                <span className="text-lime-400 text-sm font-medium tracking-wider uppercase">Studio treningowe w Zielonce</span>
+          {heroReady && (
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <div className="hero-tag inline-block px-5 py-2 rounded-full border border-lime-500/30 bg-lime-500/10 backdrop-blur-sm mb-4" style={{ animationDelay: '0.1s' }}>
+                  <span className="text-lime-400 text-sm font-medium tracking-wider uppercase">Studio treningowe w Zielonce</span>
+                </div>
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-white font-heading">
+                  <span className="hero-title-line inline-block" style={{ animationDelay: '0.25s' }}>GRANICE</span>
+                  <br />
+                  <span className="hero-title-line inline-block text-lime-400" style={{ animationDelay: '0.4s' }}>NIE ISTNIEJA</span>
+                </h1>
+                <div className="hero-divider w-24 h-1 bg-gradient-to-r from-lime-400 to-lime-600 mx-auto rounded-full" style={{ animationDelay: '0.55s' }}></div>
               </div>
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-white font-heading">
-                GRANICE
-                <br />
-                <span className="text-lime-400">NIE ISTNIEJA</span>
-              </h1>
-              <div className="w-20 h-1 bg-gradient-to-r from-lime-400 to-lime-600 mx-auto rounded-full"></div>
+
+              <p className="hero-subtitle text-xl sm:text-2xl lg:text-3xl text-white/80 max-w-3xl mx-auto font-light" style={{ animationDelay: '0.65s' }}>
+                Trening personalny &bull; Trening medyczny &bull; Przygotowanie motoryczne
+              </p>
+
+              <p className="hero-desc text-base sm:text-lg text-white/60 max-w-2xl mx-auto" style={{ animationDelay: '0.75s' }}>
+                Kameralne studio treningowe w Zielonce. <br className="hidden sm:block" />
+                Indywidualne podejscie. Kompleksowe wsparcie. Prawdziwe rezultaty.
+              </p>
+
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+                <button
+                  onClick={() => scrollToSection('#contact')}
+                  className="hero-btn btn-magnetic bg-lime-500 text-white px-10 py-4 text-lg font-bold rounded-full hover:bg-lime-400 transition-all duration-300 hover:shadow-[0_0_30px_rgba(132,204,22,0.4)] w-full sm:w-auto"
+                  style={{ animationDelay: '0.9s' }}
+                >
+                  ZACZNIJ TRENOWAC
+                </button>
+                <button
+                  onClick={() => scrollToSection('#services')}
+                  className="hero-btn btn-magnetic border-2 border-white/30 text-white px-10 py-4 text-lg font-bold rounded-full hover:bg-white/10 hover:border-lime-400/50 transition-all duration-300 w-full sm:w-auto backdrop-blur-sm"
+                  style={{ animationDelay: '1.0s' }}
+                >
+                  POZNAJ OFERTE
+                </button>
+              </div>
             </div>
-
-            <p className="text-xl sm:text-2xl lg:text-3xl text-white/80 max-w-3xl mx-auto font-light">
-              Trening personalny &bull; Trening medyczny &bull; Przygotowanie motoryczne
-            </p>
-
-            <p className="text-base sm:text-lg text-white/60 max-w-2xl mx-auto">
-              Kameralne studio treningowe w Zielonce. <br className="hidden sm:block" />
-              Indywidualne podejscie. Kompleksowe wsparcie. Prawdziwe rezultaty.
-            </p>
-
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-              <button
-                onClick={() => scrollToSection('#contact')}
-                className="bg-lime-500 text-white px-10 py-4 text-lg font-bold rounded-full hover:bg-lime-400 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(132,204,22,0.4)] w-full sm:w-auto"
-              >
-                ZACZNIJ TRENOWAC
-              </button>
-              <button
-                onClick={() => scrollToSection('#services')}
-                className="border-2 border-white/30 text-white px-10 py-4 text-lg font-bold rounded-full hover:bg-white/10 hover:border-lime-400/50 transition-all duration-300 w-full sm:w-auto backdrop-blur-sm"
-              >
-                POZNAJ OFERTE
-              </button>
-            </div>
-          </div>
+          )}
         </div>
 
-        <button
-          onClick={() => scrollToSection('#about')}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 hover:text-lime-400 animate-bounce cursor-pointer transition-colors"
-        >
-          <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </button>
+        {heroReady && (
+          <button
+            onClick={() => scrollToSection('#about')}
+            className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 hover:text-lime-400 animate-bounce cursor-pointer transition-colors"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </button>
+        )}
       </section>
+
+      {/* Section divider */}
+      <div className="section-divider"></div>
 
       {/* About Section */}
       <section id="about" className="py-24 lg:py-36 bg-gradient-to-b from-gray-50 to-white" ref={aboutRef}>
@@ -404,7 +447,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="py-24 lg:py-36 bg-white" ref={servicesRef}>
+      <section id="services" className="py-24 lg:py-36 bg-white relative" ref={servicesRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-20 scroll-animate">
             <p className="text-lime-600 font-bold text-sm uppercase tracking-[0.2em] mb-3">Oferta</p>
@@ -450,6 +493,95 @@ export default function Home() {
             >
               UMOW TRENING PROBNY
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Consultation Section - First Step */}
+      <section id="consultation" className="py-24 lg:py-36 bg-gray-900 relative overflow-hidden">
+        <div className="absolute inset-0 bg-lime-500/5"></div>
+        <div className="noise-overlay absolute inset-0"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-block px-5 py-2 rounded-full border border-lime-500/30 bg-lime-500/10 backdrop-blur-sm mb-6">
+              <span className="text-lime-400 text-sm font-medium tracking-wider uppercase">Pierwszy krok</span>
+            </div>
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 text-white font-heading">
+              KONSULTACJA + <span className="text-lime-400">ANALIZA TANITA</span>
+            </h2>
+            <p className="text-lg text-gray-400 leading-relaxed">
+              Kazda wspolprace rozpoczynamy od indywidualnej konsultacji polaczonej z profesjonalna analiza skladu ciala.
+              Dzieki temu dokladnie poznajemy Twoje potrzeby, stan zdrowia i mozliwosci, aby dobrac skuteczny oraz bezpieczny plan dzialania.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-10">
+            {/* Price card */}
+            <div className="lg:row-span-2 bg-gradient-to-br from-lime-500 to-lime-600 rounded-3xl p-10 flex flex-col justify-center items-center text-center shadow-[0_16px_50px_rgba(132,204,22,0.3)]">
+              <p className="text-white/80 text-sm uppercase tracking-wider font-semibold mb-2">Koszt konsultacji</p>
+              <div className="text-7xl sm:text-8xl font-black text-white mb-2 font-heading">100</div>
+              <div className="text-2xl font-bold text-white/90 mb-6">PLN</div>
+              <p className="text-white/70 text-sm leading-relaxed mb-8">
+                To spotkanie pozwala nam przygotowac w pelni spersonalizowana i skuteczna wspolprace.
+              </p>
+              <button
+                onClick={() => scrollToSection('#contact')}
+                className="bg-white text-lime-600 px-8 py-4 text-lg font-bold rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] w-full"
+              >
+                UMOW KONSULTACJE
+              </button>
+            </div>
+
+            {/* What includes */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-lime-500/30 transition-all duration-300">
+              <div className="w-12 h-12 bg-lime-500/20 rounded-xl flex items-center justify-center mb-5">
+                <svg className="w-6 h-6 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25Z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-5 font-heading">Co obejmuje spotkanie?</h3>
+              <div className="space-y-3">
+                {[
+                  'Wywiad zdrowotny i treningowy',
+                  'Analiza stylu zycia i celow',
+                  'Ocena postawy i ograniczen ruchowych',
+                  'Profesjonalny pomiar skladu ciala TANITA (m.in. tluszcz, miesnie, woda, wiek metaboliczny)',
+                  'Wstepne rekomendacje dotyczace dalszych dzialan',
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-lime-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <span className="text-gray-300 text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* What you gain */}
+            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 hover:border-lime-500/30 transition-all duration-300">
+              <div className="w-12 h-12 bg-lime-500/20 rounded-xl flex items-center justify-center mb-5">
+                <svg className="w-6 h-6 text-lime-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.455 2.456L21.75 6l-1.036.259a3.375 3.375 0 0 0-2.455 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-5 font-heading">Co zyskujesz?</h3>
+              <div className="space-y-3">
+                {[
+                  'Jasny punkt startowy i plan dzialania',
+                  'Bezpieczenstwo i dopasowanie do Twojego zdrowia',
+                  'Realna ocena organizmu (nie tylko wagi)',
+                  'Mozliwosc monitorowania postepow',
+                ].map((item, idx) => (
+                  <div key={idx} className="flex items-start gap-3">
+                    <svg className="w-5 h-5 text-lime-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09Z" />
+                    </svg>
+                    <span className="text-gray-300 text-sm">{item}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
