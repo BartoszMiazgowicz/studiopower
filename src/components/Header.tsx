@@ -7,7 +7,6 @@ const navItems = [
   { label: 'Start', href: '#hero' },
   { label: 'O nas', href: '#about' },
   { label: 'Oferta', href: '#services' },
-  { label: 'Grafik', href: '#schedule' },
   { label: 'Trenerzy', href: '#trainers' },
   { label: 'Opinie', href: '#testimonials' },
   { label: 'Kontakt', href: '#contact' },
@@ -53,9 +52,9 @@ export default function Header() {
               <Image
                 src="/images/logo.png"
                 alt="Power Performance"
-                width={120}
-                height={48}
-                className="h-12 w-auto"
+                width={180}
+                height={72}
+                className="h-20 w-auto"
               />
             </button>
           </div>
@@ -83,7 +82,7 @@ export default function Header() {
               onClick={() => scrollToSection('#contact')}
               className="bg-lime-500 text-white px-6 py-2.5 rounded-full font-bold text-sm hover:bg-lime-400 transition-all duration-300 hover:shadow-[0_0_20px_rgba(132,204,22,0.4)] hover:scale-105"
             >
-              ZAPISZ SIE
+              ZAPISZ SIĘ
             </button>
           </div>
 
@@ -128,7 +127,7 @@ export default function Header() {
               onClick={() => scrollToSection('#contact')}
               className="w-full bg-lime-500 text-white px-6 py-3.5 rounded-full font-bold hover:bg-lime-400 transition-all duration-200 text-sm"
             >
-              ZAPISZ SIE
+              ZAPISZ SIĘ
             </button>
           </div>
         </div>

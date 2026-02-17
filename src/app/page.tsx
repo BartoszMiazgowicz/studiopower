@@ -16,8 +16,8 @@ const scrollToSection = (id: string) => {
 const services = [
   {
     title: 'Treningi medyczne',
-    description: 'Dla osob z bolem plecow/stawow, po kontuzjach lub operacjach. Redukcja bolu, poprawa mobilnosci i zakresu ruchu.',
-    benefits: ['Redukcja bolu', 'Wsparcie pooperacyjne', 'Poprawa postawy', 'Mniejsze ryzyko kontuzji'],
+    description: 'Dla osób z bólem pleców/stawów, po kontuzjach lub operacjach. Redukcja bólu, poprawa mobilności i zakresu ruchu.',
+    benefits: ['Redukcja bólu', 'Wsparcie pooperacyjne', 'Poprawa postawy', 'Mniejsze ryzyko kontuzji'],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
@@ -26,8 +26,8 @@ const services = [
   },
   {
     title: 'Treningi personalne',
-    description: 'Indywidualny trening dopasowany do Twoich celow - sylwetka, sila, sprawnosc. Takze dla kobiet w ciazy.',
-    benefits: ['Modelowanie sylwetki', 'Wzrost sily', 'Wiecej energii', 'Pewnosc siebie'],
+    description: 'Indywidualny trening dopasowany do Twoich celów - sylwetka, siła, sprawność. Także dla kobiet w ciąży.',
+    benefits: ['Modelowanie sylwetki', 'Wzrost siły', 'Więcej energii', 'Pewność siebie'],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -36,8 +36,8 @@ const services = [
   },
   {
     title: 'Przygotowanie motoryczne',
-    description: 'Dla sportowcow zawodowych i amatorow. Sila, szybkosc, wydolnosc, koordynacja i prewencja kontuzji.',
-    benefits: ['Wzrost mocy', 'Lepsza koordynacja', 'Wieksza wytrzymalosc', 'Stabilizacja'],
+    description: 'Dla sportowców zawodowych i amatorów. Siła, szybkość, wydolność, koordynacja i prewencja kontuzji.',
+    benefits: ['Wzrost mocy', 'Lepsza koordynacja', 'Większa wytrzymałość', 'Stabilizacja'],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z" />
@@ -45,9 +45,9 @@ const services = [
     ),
   },
   {
-    title: 'Zajecia grupowe fitness',
-    description: 'Dynamiczne treningi w grupie - cardio, wzmacniajace. Energia, motywacja i wspolne osiaganie celow.',
-    benefits: ['Energia grupy', 'Roznorodnosc treningow', 'Motywacja', 'Swietna atmosfera'],
+    title: 'Zajęcia grupowe fitness',
+    description: 'Dynamiczne treningi w grupie - cardio, wzmacniające. Energia, motywacja i wspólne osiąganie celów.',
+    benefits: ['Energia grupy', 'Różnorodność treningów', 'Motywacja', 'Świetna atmosfera'],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
@@ -56,8 +56,8 @@ const services = [
   },
   {
     title: 'Plany treningowe',
-    description: 'Indywidualnie przygotowane plany treningowe pod Twoj cel, poziom i styl zycia. Jasna struktura i wsparcie.',
-    benefits: ['Jasna struktura', 'Dopasowanie do zycia', 'Profesjonalne wsparcie', 'Realizacja celow'],
+    description: 'Indywidualnie przygotowane plany treningowe pod Twój cel, poziom i styl życia. Jasna struktura i wsparcie.',
+    benefits: ['Jasna struktura', 'Dopasowanie do życia', 'Profesjonalne wsparcie', 'Realizacja celów'],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15a2.25 2.25 0 0 1 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
@@ -66,69 +66,13 @@ const services = [
   },
   {
     title: 'Dietetyka',
-    description: 'Kompleksowe wsparcie zywieniowe. Plany dopasowane do celow, stanu zdrowia i preferencji kulinarnych.',
-    benefits: ['Zdrowe nawyki', 'Dopasowany plan', 'Wsparcie eksperta', 'Trwale efekty'],
+    description: 'Kompleksowe wsparcie żywieniowe. Plany dopasowane do celów, stanu zdrowia i preferencji kulinarnych.',
+    benefits: ['Zdrowe nawyki', 'Dopasowany plan', 'Wsparcie eksperta', 'Trwałe efekty'],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
       </svg>
     ),
-  },
-];
-
-// Schedule data
-const schedule = [
-  {
-    day: 'Poniedzialek',
-    shortDay: 'PN',
-    classes: [
-      { time: '6:00 - 7:00', name: 'Poranny Power Start', instructor: 'Monika' },
-      { time: '17:00 - 18:00', name: 'Functional Training', instructor: 'Mateusz' },
-      { time: '18:30 - 19:30', name: 'Ladies Strength', instructor: 'Monika' },
-    ],
-  },
-  {
-    day: 'Wtorek',
-    shortDay: 'WT',
-    classes: [
-      { time: '6:30 - 7:30', name: 'HIIT & Core', instructor: 'Mateusz' },
-      { time: '17:30 - 18:30', name: 'Full Body Workout', instructor: 'Monika' },
-      { time: '19:00 - 20:00', name: 'Mobility & Stretch', instructor: 'Mateusz' },
-    ],
-  },
-  {
-    day: 'Sroda',
-    shortDay: 'SR',
-    classes: [
-      { time: '6:00 - 7:00', name: 'Energy Boost', instructor: 'Monika' },
-      { time: '17:00 - 18:00', name: 'Strength & Cardio', instructor: 'Mateusz' },
-      { time: '18:30 - 19:30', name: 'Body Sculpt', instructor: 'Monika' },
-    ],
-  },
-  {
-    day: 'Czwartek',
-    shortDay: 'CZ',
-    classes: [
-      { time: '6:30 - 7:30', name: 'Power Circuit', instructor: 'Mateusz' },
-      { time: '17:30 - 18:30', name: 'Functional Fitness', instructor: 'Monika' },
-      { time: '19:00 - 20:00', name: 'TRX Training', instructor: 'Mateusz' },
-    ],
-  },
-  {
-    day: 'Piatek',
-    shortDay: 'PT',
-    classes: [
-      { time: '6:00 - 7:00', name: 'Friday Power', instructor: 'Monika' },
-      { time: '17:00 - 18:00', name: 'Weekend Prep', instructor: 'Mateusz' },
-    ],
-  },
-  {
-    day: 'Sobota',
-    shortDay: 'SB',
-    classes: [
-      { time: '9:00 - 10:00', name: 'Saturday Strong', instructor: 'Monika' },
-      { time: '10:30 - 11:30', name: 'Athletic Performance', instructor: 'Mateusz' },
-    ],
   },
 ];
 
@@ -138,29 +82,29 @@ const trainers = [
     name: 'Monika',
     title: 'Trenerka personalna i medyczna',
     image: '/images/LP7A7141.jpeg',
-    specializations: ['Trening silowy dla kobiet', 'Trening medyczny', 'Trening w ciazy', 'Certyfikowany trener personalny'],
-    description: 'Doswiadczenie w sportach silowych i kompleksowe podejscie do treningu kobiet. Specjalizacja w budowaniu sily, poprawie sylwetki i bezpiecznym treningu podczas ciazy.',
+    specializations: ['Trening siłowy dla kobiet', 'Trening medyczny', 'Trening w ciąży', 'Certyfikowany trener personalny'],
+    description: 'Doświadczenie w sportach siłowych i kompleksowe podejście do treningu kobiet. Specjalizacja w budowaniu siły, poprawie sylwetki i bezpiecznym treningu podczas ciąży.',
   },
   {
     name: 'Mateusz',
     title: 'Trener personalny i przygotowania motorycznego',
     image: '/images/LP7A7110.jpeg',
     specializations: ['Przygotowanie motoryczne', 'Trening funkcjonalny', 'Gimnastyka korekcyjna', 'Rehabilitacja ruchowa'],
-    description: 'Laczy trening funkcjonalny z elementami gimnastyki korekcyjnej i rehabilitacji. Cel: redukcja bolu, poprawa jakosci zycia i wynikow sportowych.',
+    description: 'Łączy trening funkcjonalny z elementami gimnastyki korekcyjnej i rehabilitacji. Cel: redukcja bólu, poprawa jakości życia i wyników sportowych.',
   },
   {
     name: 'Majka',
     title: 'Trenerka personalna',
     image: '/images/majka.jpg',
-    specializations: ['Trening personalny', 'Poprawa jakosci ruchu', 'Sporty druzynowe', 'Korekcja niedoborow ruchowych'],
-    description: '20 lat doswiadczenia w sportach druzynowych i 10 lat stazu na silowni. Specjalistka od zadan specjalnych – znajduje niedobory w ruchu i skutecznie je eliminuje.',
+    specializations: ['Trening personalny', 'Poprawa jakości ruchu', 'Sporty drużynowe', 'Korekcja niedoborów ruchowych'],
+    description: '20 lat doświadczenia w sportach drużynowych i 10 lat stażu na siłowni. Specjalistka od zadań specjalnych – znajduje niedobory w ruchu i skutecznie je eliminuje.',
   },
   {
     name: 'Dymitrii',
     title: 'Trener personalny i fizjoterapeuta',
     image: '/images/Dymitrii.jpg',
-    specializations: ['Trening personalny', 'Fizjoterapia', 'Redukcja bolu', 'Poprawa postawy'],
-    description: 'Laczy wiedze z treningu personalnego i fizjoterapii. Pomaga odzyskac energie, zrzucic kilogramy i poprawic komfort codziennego zycia.',
+    specializations: ['Trening personalny', 'Fizjoterapia', 'Redukcja bólu', 'Poprawa postawy'],
+    description: 'Łączy wiedzę z treningu personalnego i fizjoterapii. Pomaga odzyskać energię, zrzucić kilogramy i poprawić komfort codziennego życia.',
   },
 ];
 
@@ -168,50 +112,50 @@ const trainers = [
 const testimonials = [
   {
     name: 'Hubert Dziobak',
-    role: 'Klient treningow personalnych',
+    role: 'Klient treningów personalnych',
     rating: 5,
-    text: 'Polecam trenerow Mateusza i Monike. Profesjonalne podejscie, swietna atmosfera i widoczne efekty!',
+    text: 'Polecam trenerów Mateusza i Monikę. Profesjonalne podejście, świetna atmosfera i widoczne efekty!',
   },
   {
     name: 'Angelika Podstawka',
     role: 'Trening medyczny',
     rating: 5,
-    text: 'Monika to profesjonalistka w kazdym calu. Dzieki jej wsparciu osiagnelam cele, o ktorych marzyłam.',
+    text: 'Monika to profesjonalistka w każdym calu. Dzięki jej wsparciu osiągnęłam cele, o których marzyłam.',
   },
   {
     name: 'Paulina Wisniewska',
-    role: 'Zajecia fitness',
+    role: 'Zajęcia fitness',
     rating: 5,
-    text: 'W ciagu pol roku wspolpracy zobaczyłam niesamowite rezultaty. Polecam kazdemu!',
+    text: 'W ciągu pół roku współpracy zobaczyłam niesamowite rezultaty. Polecam każdemu!',
   },
   {
     name: 'Tomasz',
     role: 'Przygotowanie motoryczne',
     rating: 5,
-    text: 'Profesjonalizm i doswiadczenie kadry na najwyzszym poziomie. Studio z klasa!',
+    text: 'Profesjonalizm i doświadczenie kadry na najwyższym poziomie. Studio z klasą!',
   },
   {
     name: 'Magdalena L.',
     role: 'Trening + dietetyka',
     rating: 5,
-    text: 'Kompleksowe wsparcie w treningu i dietetyce zmienilo moje zycie. Schudlam 12 kg i czuje sie fantastycznie!',
+    text: 'Kompleksowe wsparcie w treningu i dietetyce zmieniło moje życie. Schudłam 12 kg i czuję się fantastycznie!',
   },
   {
     name: 'Krzysztof',
     role: 'Plan treningowy',
     rating: 5,
-    text: 'Indywidualny plan treningowy byl strzalem w dziesiatke. Jasne wskazowki, progresja i stale wsparcie.',
+    text: 'Indywidualny plan treningowy był strzałem w dziesiątkę. Jasne wskazówki, progresja i stałe wsparcie.',
   },
 ];
 
 // Gallery images
 const galleryImages = [
   { src: '/images/LP7A6877.jpeg', alt: 'Studio Power Performance' },
-  { src: '/images/LP7A6879.jpeg', alt: 'Sprzet treningowy' },
+  { src: '/images/LP7A6879.jpeg', alt: 'Sprzęt treningowy' },
   { src: '/images/LP7A6880.jpeg', alt: 'Strefa treningowa' },
   { src: '/images/LP7A6909.jpeg', alt: 'Trening personalny' },
   { src: '/images/LP7A6951.jpeg', alt: 'Trening silowy' },
-  { src: '/images/LP7A7022.jpeg', alt: 'Zajecia grupowe' },
+  { src: '/images/LP7A7022.jpeg', alt: 'Zajęcia grupowe' },
 ];
 
 // Intersection Observer hook for scroll animations
@@ -251,7 +195,6 @@ export default function Home() {
   const [heroReady, setHeroReady] = useState(false);
   const aboutRef = useScrollAnimation();
   const servicesRef = useScrollAnimation();
-  const scheduleRef = useScrollAnimation();
   const trainersRef = useScrollAnimation();
   const whyUsRef = useScrollAnimation();
   const testimonialsRef = useScrollAnimation();
@@ -327,7 +270,7 @@ export default function Home() {
 
               <p className="hero-desc text-base sm:text-lg text-white/60 max-w-2xl mx-auto" style={{ animationDelay: '0.75s' }}>
                 Kameralne studio treningowe w Zielonce. <br className="hidden sm:block" />
-                Indywidualne podejscie. Kompleksowe wsparcie. Prawdziwe rezultaty.
+                Indywidualne podejście. Kompleksowe wsparcie. Prawdziwe rezultaty.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
@@ -336,14 +279,14 @@ export default function Home() {
                   className="hero-btn btn-magnetic bg-lime-500 text-white px-10 py-4 text-lg font-bold rounded-full hover:bg-lime-400 transition-all duration-300 hover:shadow-[0_0_30px_rgba(132,204,22,0.4)] w-full sm:w-auto"
                   style={{ animationDelay: '0.9s' }}
                 >
-                  ZACZNIJ TRENOWAC
+                  ZACZNIJ TRENOWAĆ
                 </button>
                 <button
                   onClick={() => scrollToSection('#services')}
                   className="hero-btn btn-magnetic border-2 border-white/30 text-white px-10 py-4 text-lg font-bold rounded-full hover:bg-white/10 hover:border-lime-400/50 transition-all duration-300 w-full sm:w-auto backdrop-blur-sm"
                   style={{ animationDelay: '1.0s' }}
                 >
-                  POZNAJ OFERTE
+                  POZNAJ OFERTĘ
                 </button>
               </div>
             </div>
@@ -374,19 +317,19 @@ export default function Home() {
               POWER <span className="text-lime-500">PERFORMANCE</span>
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              Studio prowadzone przez zespol profesjonalnych trenerow
-              z pasja do pomagania ludziom w osiaganiu ich celow. Specjalizujemy sie w treningach
-              personalnych, medycznych i przygotowaniu motorycznym sportowcow.
+              Studio prowadzone przez zespół profesjonalnych trenerów
+              z pasją do pomagania ludziom w osiąganiu ich celów. Specjalizujemy się w treningach
+              personalnych, medycznych i przygotowaniu motorycznym sportowców.
             </p>
           </div>
 
           <div className="scroll-animate delay-200 bg-white/80 backdrop-blur-sm border-l-4 border-lime-500 rounded-2xl p-8 sm:p-12 mb-20 shadow-[0_4px_20px_rgba(0,0,0,0.06)]">
             <div className="max-w-4xl mx-auto text-center">
               <p className="text-xl sm:text-2xl text-gray-700 leading-relaxed italic">
-                "Nasza misja to pomoc Ci osiagnac <span className="text-lime-500 font-bold not-italic">najlepsza forme</span>,
-                poprawic <span className="text-lime-500 font-bold not-italic">zdrowie</span> i zrealizowac
-                <span className="text-lime-500 font-bold not-italic"> cele sportowe</span> - bez wzgledu na poziom zaawansowania.
-                Wierzymy, ze <span className="text-lime-500 font-bold not-italic">granice nie istnieja</span>."
+                "Nasza misja to pomóc Ci osiągnąć <span className="text-lime-500 font-bold not-italic">najlepszą formę</span>,
+                poprawić <span className="text-lime-500 font-bold not-italic">zdrowie</span> i zrealizować
+                <span className="text-lime-500 font-bold not-italic"> cele sportowe</span> - bez względu na poziom zaawansowania.
+                Wierzymy, że <span className="text-lime-500 font-bold not-italic">granice nie istnieją</span>."
               </p>
             </div>
           </div>
@@ -394,8 +337,8 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
             {[
               {
-                title: 'Indywidualne podejscie',
-                desc: 'Kazdy plan jest tworzony specjalnie dla Ciebie, uwzgledniajac Twoje cele, mozliwosci i ograniczenia.',
+                title: 'Indywidualne podejście',
+                desc: 'Każdy plan jest tworzony specjalnie dla Ciebie, uwzględniając Twoje cele, możliwości i ograniczenia.',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -404,7 +347,7 @@ export default function Home() {
               },
               {
                 title: 'Kompleksowe wsparcie',
-                desc: 'Trening, dietetyka, wsparcie psychiczne - wszystko w jednym miejscu, dla maksymalnych efektow.',
+                desc: 'Trening, dietetyka, wsparcie psychiczne - wszystko w jednym miejscu, dla maksymalnych efektów.',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />
@@ -413,7 +356,7 @@ export default function Home() {
               },
               {
                 title: 'Kameralne studio',
-                desc: 'Ok. 400 m2 przestrzeni bez tlumow. Tu liczy sie jakosc, nie ilosc.',
+                desc: 'Ok. 400 m2 przestrzeni bez tłumów. Tu liczy się jakość, nie ilość.',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -422,7 +365,7 @@ export default function Home() {
               },
               {
                 title: 'Profesjonalizm',
-                desc: 'Certyfikowani trenerzy z wieloletnim doswiadczeniem i pasja do tego, co robia.',
+                desc: 'Certyfikowani trenerzy z wieloletnim doświadczeniem i pasją do tego, co robią.',
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M11.48 3.499a.562.562 0 0 1 1.04 0l2.125 5.111a.563.563 0 0 0 .475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 0 0-.182.557l1.285 5.385a.562.562 0 0 1-.84.61l-4.725-2.885a.562.562 0 0 0-.586 0L6.982 20.54a.562.562 0 0 1-.84-.61l1.285-5.386a.562.562 0 0 0-.182-.557l-4.204-3.602a.562.562 0 0 1 .321-.988l5.518-.442a.563.563 0 0 0 .475-.345L11.48 3.5Z" />
@@ -452,10 +395,10 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-20 scroll-animate">
             <p className="text-lime-600 font-bold text-sm uppercase tracking-[0.2em] mb-3">Oferta</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 font-heading">
-              NASZE <span className="text-lime-500">USLUGI</span>
+              NASZE <span className="text-lime-500">USŁUGI</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Kompleksowa oferta treningowa i zywieniowa dopasowana do Twoich potrzeb i celow.
+              Kompleksowa oferta treningowa i żywieniowa dopasowana do Twoich potrzeb i celów.
             </p>
           </div>
 
@@ -491,7 +434,7 @@ export default function Home() {
               onClick={() => scrollToSection('#contact')}
               className="bg-lime-500 text-white px-10 py-4 text-lg font-bold rounded-full hover:bg-lime-400 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(132,204,22,0.4)] inline-block"
             >
-              UMOW TRENING PROBNY
+              UMÓW TRENING PRÓBNY
             </button>
           </div>
         </div>
@@ -510,8 +453,8 @@ export default function Home() {
               KONSULTACJA + <span className="text-lime-400">ANALIZA TANITA</span>
             </h2>
             <p className="text-lg text-gray-400 leading-relaxed">
-              Kazda wspolprace rozpoczynamy od indywidualnej konsultacji polaczonej z profesjonalna analiza skladu ciala.
-              Dzieki temu dokladnie poznajemy Twoje potrzeby, stan zdrowia i mozliwosci, aby dobrac skuteczny oraz bezpieczny plan dzialania.
+              Każdą współpracę rozpoczynamy od indywidualnej konsultacji połączonej z profesjonalną analizą składu ciała.
+              Dzięki temu dokładnie poznajemy Twoje potrzeby, stan zdrowia i możliwości, aby dobrać skuteczny oraz bezpieczny plan działania.
             </p>
           </div>
 
@@ -519,16 +462,16 @@ export default function Home() {
             {/* Price card */}
             <div className="lg:row-span-2 bg-gradient-to-br from-lime-500 to-lime-600 rounded-3xl p-10 flex flex-col justify-center items-center text-center shadow-[0_16px_50px_rgba(132,204,22,0.3)]">
               <p className="text-white/80 text-sm uppercase tracking-wider font-semibold mb-2">Koszt konsultacji</p>
-              <div className="text-7xl sm:text-8xl font-black text-white mb-2 font-heading">100</div>
+              <div className="text-7xl sm:text-8xl font-black text-white mb-2 font-heading">150</div>
               <div className="text-2xl font-bold text-white/90 mb-6">PLN</div>
               <p className="text-white/70 text-sm leading-relaxed mb-8">
-                To spotkanie pozwala nam przygotowac w pelni spersonalizowana i skuteczna wspolprace.
+                To spotkanie pozwala nam przygotować w pełni spersonalizowaną i skuteczną współpracę.
               </p>
               <button
                 onClick={() => scrollToSection('#contact')}
                 className="bg-white text-lime-600 px-8 py-4 text-lg font-bold rounded-full hover:bg-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] w-full"
               >
-                UMOW KONSULTACJE
+                UMÓW KONSULTACJĘ
               </button>
             </div>
 
@@ -543,10 +486,10 @@ export default function Home() {
               <div className="space-y-3">
                 {[
                   'Wywiad zdrowotny i treningowy',
-                  'Analiza stylu zycia i celow',
-                  'Ocena postawy i ograniczen ruchowych',
-                  'Profesjonalny pomiar skladu ciala TANITA (m.in. tluszcz, miesnie, woda, wiek metaboliczny)',
-                  'Wstepne rekomendacje dotyczace dalszych dzialan',
+                  'Analiza stylu życia i celów',
+                  'Ocena postawy i ograniczeń ruchowych',
+                  'Profesjonalny pomiar składu ciała TANITA (m.in. tłuszcz, mięśnie, woda, wiek metaboliczny)',
+                  'Wstępne rekomendacje dotyczące dalszych działań',
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-lime-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -568,10 +511,10 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-5 font-heading">Co zyskujesz?</h3>
               <div className="space-y-3">
                 {[
-                  'Jasny punkt startowy i plan dzialania',
-                  'Bezpieczenstwo i dopasowanie do Twojego zdrowia',
+                  'Jasny punkt startowy i plan działania',
+                  'Bezpieczeństwo i dopasowanie do Twojego zdrowia',
                   'Realna ocena organizmu (nie tylko wagi)',
-                  'Mozliwosc monitorowania postepow',
+                  'Możliwość monitorowania postępów',
                 ].map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <svg className="w-5 h-5 text-lime-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -586,72 +529,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Schedule Section */}
-      <section id="schedule" className="py-24 lg:py-36 bg-gray-50" ref={scheduleRef}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-20 scroll-animate">
-            <p className="text-lime-600 font-bold text-sm uppercase tracking-[0.2em] mb-3">Grafik</p>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 font-heading">
-              GRAFIK <span className="text-lime-500">ZAJEC</span>
-            </h2>
-            <p className="text-lg text-gray-600">
-              Aktualny harmonogram zajec fitness. Sprawdz, ktore zajecia najlepiej pasuja do Twojego planu dnia!
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {schedule.map((day, index) => (
-              <div key={index} className={`scroll-animate delay-${(index % 4 + 1) * 100} bg-white rounded-2xl p-6 border border-gray-100 hover:border-lime-500/20 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)]`}>
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="w-12 h-12 bg-lime-500 rounded-xl flex items-center justify-center">
-                    <span className="text-white font-black text-sm">{day.shortDay}</span>
-                  </div>
-                  <h3 className="text-xl font-black font-heading">{day.day}</h3>
-                </div>
-                <div className="space-y-3">
-                  {day.classes.map((classItem, idx) => (
-                    <div key={idx} className="flex items-start gap-4 p-4 rounded-xl bg-gray-50 hover:bg-lime-50 transition-all duration-200 group border-l-2 border-transparent hover:border-lime-500">
-                      <div className="flex-shrink-0 mt-0.5">
-                        <svg className="w-4 h-4 text-lime-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                      </div>
-                      <div className="flex-grow min-w-0">
-                        <h4 className="font-bold text-gray-900 group-hover:text-lime-600 transition-colors text-sm">
-                          {classItem.name}
-                        </h4>
-                        <div className="flex items-center gap-3 mt-1">
-                          <span className="text-xs text-gray-500">{classItem.time}</span>
-                          <span className="text-xs text-gray-300">|</span>
-                          <span className="text-xs text-lime-600 font-medium">{classItem.instructor}</span>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-12 scroll-animate bg-white rounded-2xl border border-lime-500/20 p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 shadow-[0_2px_12px_rgba(0,0,0,0.04)]">
-            <div className="w-10 h-10 bg-lime-500/10 rounded-xl flex items-center justify-center flex-shrink-0">
-              <svg className="w-5 h-5 text-lime-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-              </svg>
-            </div>
-            <p className="text-gray-600 text-sm flex-grow">
-              Grafik moze ulec zmianie. Aktualne informacje i zapisy dostepne na naszym <strong className="text-lime-600">Instagramie</strong> oraz pod numerem telefonu studia.
-            </p>
-            <button
-              onClick={() => scrollToSection('#contact')}
-              className="bg-lime-500 text-white px-6 py-2.5 rounded-full font-bold hover:bg-lime-400 transition-all duration-200 text-sm flex-shrink-0"
-            >
-              ZAPISZ SIE
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* Trainers Section */}
       <section id="trainers" className="py-24 lg:py-36 bg-white" ref={trainersRef}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -661,7 +538,7 @@ export default function Home() {
               POZNAJ <span className="text-lime-500">TRENEROW</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Profesjonalisci z pasja i wieloletnim doswiadczeniem, ktorzy pomoga Ci osiagnac Twoje cele.
+              Profesjonaliści z pasją i wieloletnim doświadczeniem, którzy pomogą Ci osiągnąć Twoje cele.
             </p>
           </div>
 
@@ -710,18 +587,18 @@ export default function Home() {
               DLACZEGO <span className="text-lime-500">POWER PERFORMANCE?</span>
             </h2>
             <p className="text-lg text-gray-600">
-              To nie jest zwykla silownia. To miejsce, gdzie dostajesz indywidualne wsparcie i prawdziwe rezultaty.
+              To nie jest zwykła siłownia. To miejsce, gdzie dostajesz indywidualne wsparcie i prawdziwe rezultaty.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: 'Kameralne studio ~400 m2', desc: 'Bez tlumow i kolejek do sprzetu. Skoncentruj sie na treningu w komfortowych warunkach.' },
-              { title: 'Indywidualne podejscie', desc: 'Kazdy plan jest tworzony specjalnie dla Ciebie, z uwzglednieniem celow, mozliwosci i ograniczen.' },
-              { title: 'Certyfikowani profesjonalisci', desc: 'Trenerzy z licencjami, stalym rozwojem i wieloletnim doswiadczeniem w pracy z klientami.' },
-              { title: 'Kompleksowe wsparcie', desc: 'Trening + dietetyka + wsparcie mentalne. Wszystko w jednym miejscu dla maksymalnych rezultatow.' },
-              { title: 'Wspolpraca z ekspertami', desc: 'W treningach medycznych wspolpracujemy z lekarzami i fizjoterapeutami.' },
-              { title: 'Prawdziwe rezultaty', desc: 'Setki zadowolonych klientow, ktorzy osiagneli swoje cele zdrowotne i sportowe.' },
+              { title: 'Kameralne studio ~400 m2', desc: 'Bez tłumów i kolejek do sprzętu. Skoncentruj się na treningu w komfortowych warunkach.' },
+              { title: 'Indywidualne podejście', desc: 'Każdy plan jest tworzony specjalnie dla Ciebie, z uwzględnieniem celów, możliwości i ograniczeń.' },
+              { title: 'Certyfikowani profesjonaliści', desc: 'Trenerzy z licencjami, stałym rozwojem i wieloletnim doświadczeniem w pracy z klientami.' },
+              { title: 'Kompleksowe wsparcie', desc: 'Trening + dietetyka + wsparcie mentalne. Wszystko w jednym miejscu dla maksymalnych rezultatów.' },
+              { title: 'Współpraca z ekspertami', desc: 'W treningach medycznych współpracujemy z lekarzami i fizjoterapeutami.' },
+              { title: 'Prawdziwe rezultaty', desc: 'Setki zadowolonych klientów, którzy osiągnęli swoje cele zdrowotne i sportowe.' },
             ].map((reason, index) => (
               <div key={index} className={`scroll-animate delay-${(index % 3 + 1) * 100} bg-white rounded-2xl p-8 h-full border border-gray-100 hover:border-lime-500/20 transition-all duration-300 shadow-[0_2px_12px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] group`}>
                 <div className="text-3xl font-black text-lime-500/20 mb-4 font-heading">
@@ -740,8 +617,8 @@ export default function Home() {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 scroll-animate">
             {[
               { value: '~400', label: 'm2 powierzchni studia' },
-              { value: '4', label: 'Certyfikowanych trenerow' },
-              { value: '100%', label: 'Indywidualne podejscie' },
+              { value: '4', label: 'Certyfikowanych trenerów' },
+              { value: '100%', label: 'Indywidualne podejście' },
             ].map((stat, index) => (
               <div key={index} className="text-center p-10 bg-white rounded-2xl border border-lime-500/10 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
                 <div className="text-5xl lg:text-6xl font-black text-lime-500 mb-2 font-heading">{stat.value}</div>
@@ -758,10 +635,10 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-20 scroll-animate">
             <p className="text-lime-600 font-bold text-sm uppercase tracking-[0.2em] mb-3">Opinie</p>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black mb-6 font-heading">
-              CO MOWIA <span className="text-lime-500">NASI KLIENCI</span>
+              CO MÓWIĄ <span className="text-lime-500">NASI KLIENCI</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Prawdziwe opinie osob, ktore osiagnely swoje cele treningowe z nami.
+              Prawdziwe opinie osób, które osiągnęły swoje cele treningowe z nami.
             </p>
           </div>
 
@@ -803,7 +680,7 @@ export default function Home() {
               NASZE <span className="text-lime-500">STUDIO</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Zobacz, jak wyglada przestrzen, w ktorej bedziesz trenowac i osiagac swoje cele.
+              Zobacz, jak wygląda przestrzeń, w której będziesz trenować i osiągać swoje cele.
             </p>
           </div>
 
@@ -845,7 +722,7 @@ export default function Home() {
               GDZIE NAS <span className="text-lime-500">ZNAJDZIESZ</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Odwiedz nas w Zielonce. Dogodna lokalizacja i dostepny parking.
+              Odwiedź nas w Zielonce. Dogodna lokalizacja i dostępny parking.
             </p>
           </div>
 
@@ -878,8 +755,8 @@ export default function Home() {
                 </div>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   <strong className="text-gray-900">POWER PERFORMANCE</strong><br />
-                  Stanislawa Staszica 58<br />
-                  1 pietro<br />
+                  Stanisława Staszica 58<br />
+                  1 piętro<br />
                   05-220 Zielonka
                 </p>
                 <a
@@ -929,7 +806,7 @@ export default function Home() {
               SKONTAKTUJ SIE <span className="text-lime-500">Z NAMI</span>
             </h2>
             <p className="text-lg text-gray-600">
-              Zadzwon, napisz lub odwiedz nas. Chetnie odpowiemy na Twoje pytania i pomozemy wybrac najlepszy plan treningowy.
+              Zadzwoń, napisz lub odwiedź nas. Chętnie odpowiemy na Twoje pytania i pomożemy wybrać najlepszy plan treningowy.
             </p>
           </div>
 
@@ -940,8 +817,8 @@ export default function Home() {
                   title: 'Adres',
                   content: (
                     <p className="text-gray-600 text-sm">
-                      Stanislawa Staszica 58<br />
-                      1 pietro<br />
+                      Stanisława Staszica 58<br />
+                      1 piętro<br />
                       05-220 Zielonka
                     </p>
                   ),
@@ -1005,7 +882,7 @@ export default function Home() {
                         </a>
                       </div>
                       <p className="text-gray-400 text-xs mt-3">
-                        Aktualny grafik zajec znajdziesz na naszym <strong className="text-lime-600">Instagramie</strong>!
+                        Aktualny grafik zajęć znajdziesz na naszym <strong className="text-lime-600">Instagramie</strong>!
                       </p>
                     </div>
                   ),
@@ -1036,11 +913,11 @@ export default function Home() {
                   Pierwszy krok
                 </div>
                 <h3 className="text-3xl font-black mb-4 text-white font-heading">
-                  GOTOWY NA <span className="text-lime-400">ZMIANE?</span>
+                  GOTOWY NA <span className="text-lime-400">ZMIANĘ?</span>
                 </h3>
                 <p className="text-gray-400 text-lg leading-relaxed">
-                  Pierwszy krok jest najtrudniejszy, ale my Ci w tym pomozemy. Umow trening probny i przekonaj sie,
-                  ze <span className="text-lime-400 font-bold">granice nie istnieja</span>.
+                  Pierwszy krok jest najtrudniejszy, ale my Ci w tym pomożemy. Umów trening próbny i przekonaj się,
+                  że <span className="text-lime-400 font-bold">granice nie istnieją</span>.
                 </p>
               </div>
 
@@ -1049,14 +926,14 @@ export default function Home() {
                   href="tel:+48696470426"
                   className="block w-full bg-lime-500 text-white text-center px-8 py-4 text-lg font-bold rounded-full hover:bg-lime-400 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(132,204,22,0.4)]"
                 >
-                  ZADZWON TERAZ
+                  ZADZWOŃ TERAZ
                 </a>
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-800">
                 <p className="text-sm text-gray-500">
                   <strong className="text-gray-400">Godziny otwarcia:</strong><br />
-                  Poniedzialek - Piatek: 6:00 - 22:00<br />
+                  Poniedziałek - Piątek: 6:00 - 22:00<br />
                   Sobota - Niedziela: 8:00 - 20:00
                 </p>
               </div>

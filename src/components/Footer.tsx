@@ -18,7 +18,7 @@ export default function Footer() {
               className="h-10 w-auto mb-4 brightness-0 invert"
             />
             <p className="text-gray-500 text-sm leading-relaxed mt-4">
-              Kameralne studio treningowe w Zielonce. Indywidualne podejscie, profesjonalni trenerzy, prawdziwe rezultaty.
+              Kameralne studio treningowe w Zielonce. Indywidualne podejście, profesjonalni trenerzy, prawdziwe rezultaty.
             </p>
           </div>
 
@@ -26,7 +26,7 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-sm uppercase tracking-wider text-gray-400 mb-5">Nawigacja</h4>
             <ul className="space-y-3">
-              {['O nas', 'Oferta', 'Grafik', 'Trenerzy', 'Opinie', 'Kontakt'].map((item) => (
+              {['O nas', 'Oferta', 'Trenerzy', 'Opinie', 'Kontakt'].map((item) => (
                 <li key={item}>
                   <span className="text-gray-500 hover:text-lime-400 transition-colors text-sm cursor-pointer">
                     {item}
