@@ -112,7 +112,7 @@ export default function ONasPage() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Certyfikowana trenerka z doświadczeniem w sportach siłowych. Specjalizuje się w treningu siłowym dla kobiet, treningach medycznych i prowadzeniu osób po kontuzjach. Jej pasją jest pomaganie kobietom w odkrywaniu ich siły.
+                  Łączy wiedzę medyczną z doświadczeniem zawodniczym. Pomaga budować zdrową sylwetkę, wzmacnia ciało i pokazuje kobietom, jak czuć się pewnie w swoim ciele.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Trening siłowy</span>
@@ -147,7 +147,7 @@ export default function ONasPage() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Trener personalny i przygotowania motorycznego łączący trening funkcjonalny z elementami gimnastyki korekcyjnej i rehabilitacji ruchowej. Specjalizuje się w pracy ze sportowcami i osobami z problemami ruchowymi.
+                  Specjalista od powrotu po urazach i budowania sprawności sportowej. Pracuje z rekreacyjnymi trenującymi i zawodnikami – rozwija siłę, mobilność i wytrzymałość, zawsze bezpiecznie i skutecznie.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Przygotowanie motoryczne</span>
@@ -182,7 +182,7 @@ export default function ONasPage() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  20 lat doświadczenia w sportach drużynowych (piłka nożna & siatkówka) i 10 lat stażu na siłowni. Trenerka z misją poprawy jakości Twojego ruchu. Specjalistka od zadań specjalnych – znajduje niedobory w Twoim ruchu i skutecznie je eliminuje.
+                  Pracuje z kobietami i mężczyznami, niezależnie od poziomu zaawansowania. Ma solidne zaplecze sportowe, wiedzę i doświadczenie, które przekłada na konkretną, odpowiedzialną pracę z ciałem.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1.5 bg-[#15A727]/10 text-[#15A727] rounded-full text-sm font-medium">Trening personalny</span>
@@ -209,7 +209,7 @@ export default function ONasPage() {
               </div>
               <div className="p-8">
                 <p className="text-gray-600 mb-6 leading-relaxed">
-                  Pomaga osobom zapracowanym odzyskać energię, zrzucić zbędne kilogramy i poczuć się dobrze w swoim ciele. Łączy wiedzę z treningu personalnego i fizjoterapii – ćwiczenia są skuteczne, bezpieczne i dopasowane do Ciebie. Skupia się na sylwetce, poprawie postawy i redukcji bólu.
+                  Kompleksowe podejście: od fizjoterapii, przez trening medyczny, po indywidualne plany personalne. Z nim osiągniesz progres bez ryzyka kontuzji. W bezpieczny sposób zbudujesz sprawne ciało.
                 </p>
                 <div className="flex flex-wrap gap-2">
                   <span className="px-3 py-1.5 bg-[#1863DC]/10 text-[#1863DC] rounded-full text-sm font-medium">Trening personalny</span>

@@ -62,8 +62,12 @@ export default function Footer() {
                 <span className="text-gray-400">6:00 - 22:00</span>
               </div>
               <div className="flex justify-between">
-                <span>Sb - Nd</span>
-                <span className="text-gray-400">8:00 - 20:00</span>
+                <span>Sobota</span>
+                <span className="text-gray-400">8:00 - 14:00</span>
+              </div>
+              <div className="flex justify-between">
+                <span>Niedziela</span>
+                <span className="text-red-400">Nieczynne</span>
               </div>
             </div>
 

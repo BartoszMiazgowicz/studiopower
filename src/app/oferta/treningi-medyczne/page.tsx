@@ -7,20 +7,20 @@ export const metadata = {
 };
 
 const forWhom = [
-  "Osoby z bólami pleców i stawów",
-  "Osoby po kontuzjach i operacjach",
-  "Osoby z problemami postawy",
-  "Osoby szukające alternatywy dla rehabilitacji bez efektów",
-  "Osoby chcące zapobiegać przyszłym problemom zdrowotnym",
+  "Osoby z bólem pleców i stawów",
+  "Osoby po urazach i operacjach",
+  "Osoby z wadami postawy",
+  "Osoby prowadzące siedzący tryb życia",
+  "Osoby szukające bezpiecznej alternatywy dla rehabilitacji bez efektów",
 ];
 
 const benefits = [
-  { title: "Redukcja bólu", desc: "Stopniowe zmniejszanie dolegliwości bólowych" },
-  { title: "Poprawa mobilności", desc: "Zwiększenie zakresu ruchu" },
-  { title: "Siła i wytrzymałość", desc: "Wzmocnienie mięśni stabilizujących" },
-  { title: "Wsparcie pooperacyjne", desc: "Bezpieczny powrót do aktywności" },
-  { title: "Prewencja kontuzji", desc: "Zmniejszenie ryzyka urazów" },
-  { title: "Poprawa postawy", desc: "Korekcja wad postawy" },
+  { title: "Poprawa funkcjonowania ciała", desc: "Przywrócenie prawidłowego działania mięśni i stawów" },
+  { title: "Redukcja dolegliwości bólowych", desc: "Stopniowe zmniejszanie bólu i dyskomfortu" },
+  { title: "Wzmocnienie osłabionych obszarów", desc: "Budowanie siły w miejscach wymagających wsparcia" },
+  { title: "Prawidłowe wzorce ruchu", desc: "Przywrócenie naturalnej i bezpiecznej biomechaniki" },
+  { title: "Prewencja kontuzji", desc: "Zmniejszenie ryzyka przyszłych urazów" },
+  { title: "Poprawa postawy", desc: "Korekcja wad postawy i stabilizacja kręgosłupa" },
 ];
 
 export default function TreningiMedycznePage() {
@@ -31,13 +31,13 @@ export default function TreningiMedycznePage() {
         <div className="absolute inset-0 hero-pattern opacity-50"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block px-4 py-2 bg-red-500/20 rounded-full text-sm font-medium text-red-400 mb-6">
-            Treningi Medyczne
+            Trening medyczny
           </span>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
             Odzyskaj <span className="text-red-400">Sprawność</span>
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Pozbądź się bólu dzięki indywidualnie dopasowanym treningom. Współpracujemy z lekarzami i fizjoterapeutami.
+            Indywidualny, bezpieczny trening ukierunkowany na zdrowie i sprawność. Przeznaczony dla osób z bólem, po urazach, z wadami postawy lub prowadzących siedzący tryb życia.
           </p>
         </div>
       </section>
@@ -48,16 +48,16 @@ export default function TreningiMedycznePage() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Treningi Medyczne w Zielonce
+                Trening medyczny w Zielonce
               </h2>
               <p className="text-lg text-gray-600 mb-6">
-                Masz dość bólów pleców, stawów czy urazów, które utrudniają Ci życie? Nasze Treningi Medyczne to idealne rozwiązanie dla Ciebie!
+                Trening medyczny to indywidualny, bezpieczny trening ukierunkowany na zdrowie i sprawność. Przeznaczony dla osób z bólem, po urazach, z wadami postawy lub prowadzących siedzący tryb życia.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-                Dostosujemy plan treningowy do Twoich potrzeb, pomagając przywrócić pełną sprawność mięśni i stawów oraz poprawić zakres ruchu.
+                Jego celem jest poprawa funkcjonowania ciała, redukcja dolegliwości bólowych, wzmocnienie osłabionych obszarów oraz przywrócenie prawidłowych wzorców ruchu.
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Niezależnie od tego, czy walczysz z kontuzją, bólem pleców, czy innym problemem zdrowotnym - nasze ćwiczenia są bezpieczne, skuteczne i zaprojektowane z myślą o Twoim szybkim powrocie do formy.
+                Każdy plan jest indywidualnie dopasowany do Twoich potrzeb i możliwości. Współpracujemy z lekarzami i fizjoterapeutami, aby zapewnić Ci bezpieczny powrót do pełnej sprawności.
               </p>
               <Link
                 href="/kontakt"

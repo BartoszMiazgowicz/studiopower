@@ -15,9 +15,9 @@ const scrollToSection = (id: string) => {
 // Services data
 const services = [
   {
-    title: 'Treningi medyczne',
-    description: 'Dla osób z bólem pleców/stawów, po kontuzjach lub operacjach. Redukcja bólu, poprawa mobilności i zakresu ruchu.',
-    benefits: ['Redukcja bólu', 'Wsparcie pooperacyjne', 'Poprawa postawy', 'Mniejsze ryzyko kontuzji'],
+    title: 'Trening medyczny',
+    description: 'Indywidualny, bezpieczny trening ukierunkowany na zdrowie i sprawność. Przeznaczony dla osób z bólem, po urazach, z wadami postawy lub prowadzących siedzący tryb życia.',
+    benefits: ['Poprawa funkcjonowania ciała', 'Redukcja dolegliwości bólowych', 'Wzmocnienie osłabionych obszarów', 'Prawidłowe wzorce ruchu'],
     icon: (
       <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
@@ -65,7 +65,7 @@ const services = [
     ),
   },
   {
-    title: 'Dietetyka',
+    title: 'Doradztwo żywieniowe',
     description: 'Kompleksowe wsparcie żywieniowe. Plany dopasowane do celów, stanu zdrowia i preferencji kulinarnych.',
     benefits: ['Zdrowe nawyki', 'Dopasowany plan', 'Wsparcie eksperta', 'Trwałe efekty'],
     icon: (
@@ -83,28 +83,28 @@ const trainers = [
     title: 'Trenerka personalna i medyczna',
     image: '/images/LP7A7141.jpeg',
     specializations: ['Trening siłowy dla kobiet', 'Trening medyczny', 'Trening w ciąży', 'Certyfikowany trener personalny'],
-    description: 'Doświadczenie w sportach siłowych i kompleksowe podejście do treningu kobiet. Specjalizacja w budowaniu siły, poprawie sylwetki i bezpiecznym treningu podczas ciąży.',
+    description: 'Łączy wiedzę medyczną z doświadczeniem zawodniczym. Pomaga budować zdrową sylwetkę, wzmacnia ciało i pokazuje kobietom, jak czuć się pewnie w swoim ciele.',
   },
   {
     name: 'Mateusz',
     title: 'Trener personalny i przygotowania motorycznego',
     image: '/images/LP7A7110.jpeg',
     specializations: ['Przygotowanie motoryczne', 'Trening funkcjonalny', 'Gimnastyka korekcyjna', 'Rehabilitacja ruchowa'],
-    description: 'Łączy trening funkcjonalny z elementami gimnastyki korekcyjnej i rehabilitacji. Cel: redukcja bólu, poprawa jakości życia i wyników sportowych.',
+    description: 'Specjalista od powrotu po urazach i budowania sprawności sportowej. Pracuje z rekreacyjnymi trenującymi i zawodnikami – rozwija siłę, mobilność i wytrzymałość, zawsze bezpiecznie i skutecznie.',
   },
   {
     name: 'Majka',
     title: 'Trenerka personalna',
     image: '/images/majka.jpg',
     specializations: ['Trening personalny', 'Poprawa jakości ruchu', 'Sporty drużynowe', 'Korekcja niedoborów ruchowych'],
-    description: '20 lat doświadczenia w sportach drużynowych i 10 lat stażu na siłowni. Specjalistka od zadań specjalnych – znajduje niedobory w ruchu i skutecznie je eliminuje.',
+    description: 'Pracuje z kobietami i mężczyznami, niezależnie od poziomu zaawansowania. Ma solidne zaplecze sportowe, wiedzę i doświadczenie, które przekłada na konkretną, odpowiedzialną pracę z ciałem.',
   },
   {
     name: 'Dymitrii',
     title: 'Trener personalny i fizjoterapeuta',
     image: '/images/Dymitrii.jpg',
     specializations: ['Trening personalny', 'Fizjoterapia', 'Redukcja bólu', 'Poprawa postawy'],
-    description: 'Łączy wiedzę z treningu personalnego i fizjoterapii. Pomaga odzyskać energię, zrzucić kilogramy i poprawić komfort codziennego życia.',
+    description: 'Kompleksowe podejście: od fizjoterapii, przez trening medyczny, po indywidualne plany personalne. Z nim osiągniesz progres bez ryzyka kontuzji. W bezpieczny sposób zbudujesz sprawne ciało.',
   },
 ];
 
@@ -786,9 +786,13 @@ export default function Home() {
                     <span className="text-gray-500 text-sm">Pn - Pt</span>
                     <span className="font-semibold text-gray-900 text-sm">6:00 - 22:00</span>
                   </div>
+                  <div className="flex justify-between items-center py-2 border-b border-gray-50">
+                    <span className="text-gray-500 text-sm">Sobota</span>
+                    <span className="font-semibold text-gray-900 text-sm">8:00 - 14:00</span>
+                  </div>
                   <div className="flex justify-between items-center py-2">
-                    <span className="text-gray-500 text-sm">Sb - Nd</span>
-                    <span className="font-semibold text-gray-900 text-sm">8:00 - 20:00</span>
+                    <span className="text-gray-500 text-sm">Niedziela</span>
+                    <span className="font-semibold text-red-500 text-sm">Nieczynne</span>
                   </div>
                 </div>
               </div>
@@ -934,7 +938,8 @@ export default function Home() {
                 <p className="text-sm text-gray-500">
                   <strong className="text-gray-400">Godziny otwarcia:</strong><br />
                   Poniedziałek - Piątek: 6:00 - 22:00<br />
-                  Sobota - Niedziela: 8:00 - 20:00
+                  Sobota: 8:00 - 14:00<br />
+                  Niedziela: Nieczynne
                 </p>
               </div>
             </div>

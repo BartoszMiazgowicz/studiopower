@@ -8,11 +8,11 @@ export const metadata = {
 
 const services = [
   {
-    title: "Treningi Medyczne",
-    description: "Odzyskaj pełną sprawność i pozbądź się bólu dzięki indywidualnie dopasowanym treningom. Idealne dla osób z bólami pleców, stawów, po kontuzjach lub operacjach.",
+    title: "Trening medyczny",
+    description: "Indywidualny, bezpieczny trening ukierunkowany na zdrowie i sprawność. Przeznaczony dla osób z bólem, po urazach, z wadami postawy lub prowadzących siedzący tryb życia.",
     image: "/images/LP7A7110.jpeg",
     href: "/oferta/treningi-medyczne",
-    features: ["Redukcja bólu", "Poprawa mobilności", "Współpraca z lekarzami", "Wsparcie pooperacyjne"],
+    features: ["Poprawa funkcjonowania ciała", "Redukcja dolegliwości bólowych", "Wzmocnienie osłabionych obszarów", "Prawidłowe wzorce ruchu"],
     color: "from-red-500 to-pink-500",
   },
   {
@@ -130,21 +130,21 @@ export default function OfertaPage() {
         </div>
       </section>
 
-      {/* Dietetyka CTA */}
+      {/* Doradztwo żywieniowe CTA */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="bg-gradient-to-r from-teal-500 to-cyan-500 rounded-3xl p-12 text-center text-white">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-              Wsparcie Dietetyczne
+              Doradztwo żywieniowe
             </h2>
             <p className="text-lg opacity-90 mb-8 max-w-2xl mx-auto">
-              Kompleksowa opieka dietetyczna dopasowana do Twoich celów. Plany żywieniowe, które uwzględniają Twój styl życia.
+              Kompleksowe doradztwo żywieniowe dopasowane do Twoich celów. Plany żywieniowe, które uwzględniają Twój styl życia.
             </p>
             <Link
               href="/dietetyka"
               className="inline-flex items-center gap-2 px-8 py-4 bg-white text-teal-600 font-semibold rounded-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
             >
-              Zobacz ofertę dietetyczną
+              Zobacz ofertę żywieniową
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
