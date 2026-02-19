@@ -561,7 +561,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="p-5">
-                  <p className="text-gray-600 text-sm mb-4 leading-relaxed line-clamp-3">
+                  <p className="text-gray-600 text-sm mb-4 leading-relaxed">
                     {trainer.description}
                   </p>
                   <div className="flex flex-wrap gap-1.5">
